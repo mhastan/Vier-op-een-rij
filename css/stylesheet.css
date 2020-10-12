@@ -1,0 +1,135 @@
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    font-family: 'Arial';
+    overflow-y: hidden;
+
+}
+#playerInputs{
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 50px;
+    background: darkgray;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+    letter-spacing: 2px;
+    color: darkgray;
+}
+label{
+    font-size: 17px;
+}
+#player1{
+    width: 300px;
+    height: 30px;
+    color: darkgoldenrod;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#player2{
+    width: 300px;
+    height: 30px;
+    color: red;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+
+button {
+    margin-top: 10px;
+    float: right;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:13px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    border: none;
+
+}
+button:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:7%;   /* Height of the footer */
+    color: white;
+    text-align: center;
+    background-color: #a9a9a9;
+}
+
+footer > p{
+  padding-bottom: 10px;
+  color: black;
+}
+board {
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px 125px 125px 125px;
+    margin: 100px auto;
+    width: 50%;;
+    grid-column-gap: 0px;
+    justify-content: center;
+
+    background-color: darkgray;
+    border:1px solid black;
+    /* box-shadow: 5px 5px rgba(0, 0, 0, 0.441); */
+
+
+}
+.board-item {
+    background-color: white;
+    border: 1px solid;
+    height: 122px;
+    cursor: pointer;
+    text-align: center;
+
+    /* width: 90px;
+    height: 90px; */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 1fr;
+}
+
+#left {
+    float: left;
+    margin: 50px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    color: darkgoldenrod;
+}
+#right {
+    float: right;
+    margin: 50px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    color: red;
+}
